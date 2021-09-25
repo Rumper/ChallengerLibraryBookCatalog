@@ -44,5 +44,6 @@ You can view the project website at
 and it's time to tamper with the web.  
 
 # Create SuperUser...
-Use command: 
-	*python manage.py createsuperuser*
+Use command:
+
+	python manage.py createsuperuser
