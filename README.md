@@ -22,7 +22,8 @@ Gettext by translations (64bits) https://github.com/mlocati/gettext-iconv-window
 
 Execute:
 
-Run the *excecute_install.bat* file to install all dependecies. This file is in root folder of the project.
+Run the file to install all dependecies. This file is in root folder of the project:
+	excecute_install.bat
 You must have run the Docker instance before running the file.
 This file will install:
 - the pip requirements package.
