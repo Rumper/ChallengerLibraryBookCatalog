@@ -1,4 +1,5 @@
 pip install virtualenv==20.7.2
+virtualenv env
 env\Script\activate
 pip install -r ChallengerLibraryBookCatalog\requirements.txt
 python manage.py migrate
