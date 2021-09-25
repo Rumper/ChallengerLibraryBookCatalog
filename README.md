@@ -27,10 +27,11 @@ Run the file to install all dependecies. This file is in root folder of the proj
 	excecute_install.bat
 
 You must have run the Docker instance before running the file.
-This file will install:
-- the pip requirements package.
-- migrations
-- the fixed data of the books
+This file will perfom:
+- Create virtual environment
+- Install the pip requirements package.
+- The migrations
+- Install the fixed data of the books
 - Compile the translations
 - Create the index in elastisearch <- Is need to has run the docker instance 
 - Execute the test
