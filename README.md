@@ -18,7 +18,9 @@ Run Docker:
 
 	docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:5.5.3
 
-Gettext by translations (64bits) https://github.com/mlocati/gettext-iconv-windows/releases/download/v0.21-v1.16/gettext0.21-iconv1.16-shared-64.exe
+Gettext by translations (64bits)
+
+	https://github.com/mlocati/gettext-iconv-windows/releases/download/v0.21-v1.16/gettext0.21-iconv1.16-shared-64.exe
 
 Execute:
 
@@ -38,10 +40,14 @@ This file will perfom:
 Inspect file but more details
 
 # Run Proyect...
-To start the project use the command: 
-	*python manage.py runserver*
-You can view the project website at 
-	*http://127.0.0.1:8000* 
+To start the project use the command:
+
+	python manage.py runserver
+
+You can view the project website at
+
+	http://127.0.0.1:8000
+
 and it's time to tamper with the web.  
 
 # Create SuperUser...
