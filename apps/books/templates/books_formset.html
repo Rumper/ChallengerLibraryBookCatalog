@@ -1,0 +1,42 @@
+{% load i18n %}
+
+<div class="formset-content mt-5">
+	<h5 class="mb-2">{% trans 'Book Info' %}</h5>
+	<div class="row list-group" style="flex-direction: inherit;">
+	{% for form in forms %}
+		<div class="list-group-item col-md-5">
+			<a class="trash-row" onclick="delete_row(this); return false;"><i class="fa fa-trash"></i> {% trans 'delete' %}</a>
+			{{ form.as_p }}
+		</div>
+	{% endfor %}
+	</div>
+	<div class="formset-footer mt-4">
+		{{ forms.management_form }}
+		<div class="empty-form hidden list-group-item col-md-5">
+			<a class="trash-row" onclick="delete_row(this); return false;"><i class="fa fa-trash"></i> {% trans 'delete' %}</a>
+			{{ forms.empty_form.as_p }}
+			<input type="hidden" name="form-INDEX" value="1" id="id_form-INDEX">
+		</div>
+		<a class="add-row" onclick="get_add_row(this); return false;"><i class="fa fa-plus"></i> {% trans 'Add other row' %}</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function get_add_row(action){
+		var parent = $(action).parent()
+		var form_idx = parent.find("#id_form-INDEX").val();
+	  	var new_form = parent.find(".empty-form").clone(true,true)
+	  	new_form.removeClass('empty-form hidden')
+	  	new_form.html(new_form.html().replace(/__prefix__/g, form_idx))
+	    parent.closest('.formset-content').find('.list-group').append(new_form);
+	    parent.find("#id_form-TOTAL_FORMS").val(parseInt(form_idx)+1);
+	    parent.find("#id_form-INDEX").val(parseInt(form_idx)+1);
+	}
+
+	function delete_row(action){
+		var parent = $(action).parent()
+		if(parent.parent().find('.list-group-item').length == 1) return
+	  parent.find("#id_form-TOTAL_FORMS").val(parseInt(parent.find("#id_form-TOTAL_FORMS").val()) - 1);
+	  parent.remove()
+	}
+</script>

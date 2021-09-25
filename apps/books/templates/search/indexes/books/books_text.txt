@@ -1,0 +1,12 @@
+{{ object.text }}
+{{ object.name }}
+{% for genre in object.genre.all %}
+    {{ genre.name }}
+{% endfor %}
+{% for info in object.info.all %}
+    {{ info.isbn }}
+    {{ info.editorial }}
+    {{ info.get_format_display }}
+    {{ info.publication_date }}
+{% endfor %}
+{{ object.description }}

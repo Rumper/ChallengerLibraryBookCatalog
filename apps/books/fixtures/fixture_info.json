@@ -1,0 +1,62 @@
+[
+{
+    "model": "books.booksinfo",
+    "pk": 1,
+    "fields": {
+        "created_date": "2021-09-24T23:52:17.848Z",
+        "updated_date": "2021-09-24T23:52:17.848Z",
+        "book": 1,
+        "editorial": "George Allen & Unwin",
+        "publication_date": 1954,
+        "is_retired": false,
+        "isbn": "878088637484",
+        "format": "phy",
+        "user": null
+    }
+},
+{
+    "model": "books.booksinfo",
+    "pk": 2,
+    "fields": {
+        "created_date": "2021-09-24T23:52:23.546Z",
+        "updated_date": "2021-09-24T23:52:23.546Z",
+        "book": 2,
+        "editorial": "Ediciones B",
+        "publication_date": 2018,
+        "is_retired": false,
+        "isbn": "603274729834",
+        "format": "phy",
+        "user": null
+    }
+},
+{
+    "model": "books.booksinfo",
+    "pk": 3,
+    "fields": {
+        "created_date": "2021-09-24T23:52:33.334Z",
+        "updated_date": "2021-09-24T23:52:33.334Z",
+        "book": 3,
+        "editorial": "Planeta",
+        "publication_date": 2007,
+        "is_retired": false,
+        "isbn": "848224056572",
+        "format": "phy",
+        "user": null
+    }
+},
+{
+    "model": "books.booksinfo",
+    "pk": 4,
+    "fields": {
+        "created_date": "2021-09-24T23:52:34.905Z",
+        "updated_date": "2021-09-24T23:52:34.905Z",
+        "book": 4,
+        "editorial": "Alfaguara",
+        "publication_date": 2015,
+        "is_retired": false,
+        "isbn": "959606423743",
+        "format": "phy",
+        "user": null
+    }
+}
+]

@@ -1,0 +1,560 @@
+[
+{
+    "model": "books.booksgenres",
+    "pk": 1,
+    "fields": {
+        "created_date": "2021-09-22T22:37:54.260Z",
+        "updated_date": "2021-09-22T22:33:21.094Z",
+        "name": "Accion y aventura"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 2,
+    "fields": {
+        "created_date": "2021-09-22T22:37:54.606Z",
+        "updated_date": "2021-09-22T22:33:21.445Z",
+        "name": "Arte / arquitectura"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 3,
+    "fields": {
+        "created_date": "2021-09-22T22:37:54.690Z",
+        "updated_date": "2021-09-22T22:33:21.517Z",
+        "name": "Historia alternativa"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 4,
+    "fields": {
+        "created_date": "2021-09-22T22:37:54.781Z",
+        "updated_date": "2021-09-22T22:33:21.587Z",
+        "name": "Autobiografia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 5,
+    "fields": {
+        "created_date": "2021-09-22T22:37:54.873Z",
+        "updated_date": "2021-09-22T22:33:21.667Z",
+        "name": "Antologia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 6,
+    "fields": {
+        "created_date": "2021-09-22T22:37:54.958Z",
+        "updated_date": "2021-09-22T22:33:21.749Z",
+        "name": "Biografia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 7,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.031Z",
+        "updated_date": "2021-09-22T22:33:21.826Z",
+        "name": "Pollito encendido"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 8,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.107Z",
+        "updated_date": "2021-09-22T22:33:21.908Z",
+        "name": "Negocios economicos"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 9,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.191Z",
+        "updated_date": "2021-09-22T22:33:21.982Z",
+        "name": "Para ninos"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 10,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.261Z",
+        "updated_date": "2021-09-22T22:33:22.054Z",
+        "name": "Artesanias / pasatiempos"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 11,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.335Z",
+        "updated_date": "2021-09-22T22:33:22.133Z",
+        "name": "Clasico"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 12,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.424Z",
+        "updated_date": "2021-09-22T22:33:22.218Z",
+        "name": "Libro de cocina"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 13,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.504Z",
+        "updated_date": "2021-09-22T22:33:22.297Z",
+        "name": "Libro comico"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 14,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.582Z",
+        "updated_date": "2021-09-22T22:33:22.365Z",
+        "name": "Diario"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 15,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.656Z",
+        "updated_date": "2021-09-22T22:33:22.432Z",
+        "name": "Mayoria de edad"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 16,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.715Z",
+        "updated_date": "2021-09-22T22:33:22.490Z",
+        "name": "Diccionario"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 17,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.773Z",
+        "updated_date": "2021-09-22T22:33:22.550Z",
+        "name": "Crimen"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 18,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.850Z",
+        "updated_date": "2021-09-22T22:33:22.607Z",
+        "name": "Enciclopedia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 19,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.932Z",
+        "updated_date": "2021-09-22T22:33:22.682Z",
+        "name": "Drama"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 20,
+    "fields": {
+        "created_date": "2021-09-22T22:37:55.998Z",
+        "updated_date": "2021-09-22T22:33:22.750Z",
+        "name": "Guia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 21,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.076Z",
+        "updated_date": "2021-09-22T22:33:22.807Z",
+        "name": "Cuento de hadas"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 22,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.131Z",
+        "updated_date": "2021-09-22T22:33:22.866Z",
+        "name": "Salud y estado fisico"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 23,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.182Z",
+        "updated_date": "2021-09-22T22:33:22.933Z",
+        "name": "Fantasia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 24,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.248Z",
+        "updated_date": "2021-09-22T22:33:22.982Z",
+        "name": "Historia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 25,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.315Z",
+        "updated_date": "2021-09-22T22:33:23.033Z",
+        "name": "Novela grafica"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 26,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.372Z",
+        "updated_date": "2021-09-22T22:33:23.082Z",
+        "name": "Casa y Jardin"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 27,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.431Z",
+        "updated_date": "2021-09-22T22:33:23.141Z",
+        "name": "Ficcion historica"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 28,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.489Z",
+        "updated_date": "2021-09-22T22:33:23.207Z",
+        "name": "Humor"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 29,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.556Z",
+        "updated_date": "2021-09-22T22:33:23.258Z",
+        "name": "Horror"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 30,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.631Z",
+        "updated_date": "2021-09-22T22:33:23.316Z",
+        "name": "diario"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 31,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.719Z",
+        "updated_date": "2021-09-22T22:33:23.383Z",
+        "name": "Misterio"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 32,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.764Z",
+        "updated_date": "2021-09-22T22:33:23.449Z",
+        "name": "Matematicas"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 33,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.827Z",
+        "updated_date": "2021-09-22T22:33:23.516Z",
+        "name": "Romance paranormal"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 34,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.889Z",
+        "updated_date": "2021-09-22T22:33:23.590Z",
+        "name": "Memoria"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 35,
+    "fields": {
+        "created_date": "2021-09-22T22:37:56.956Z",
+        "updated_date": "2021-09-22T22:33:23.650Z",
+        "name": "Libro de fotos"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 36,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.014Z",
+        "updated_date": "2021-09-22T22:33:23.715Z",
+        "name": "Filosofia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 37,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.073Z",
+        "updated_date": "2021-09-22T22:33:23.791Z",
+        "name": "Poesia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 38,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.123Z",
+        "updated_date": "2021-09-22T22:33:23.874Z",
+        "name": "Oracion"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 39,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.156Z",
+        "updated_date": "2021-09-22T22:33:23.941Z",
+        "name": "Thriller politico"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 40,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.200Z",
+        "updated_date": "2021-09-22T22:33:24.016Z",
+        "name": "Religion, espiritualidad y nueva era"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 41,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.257Z",
+        "updated_date": "2021-09-22T22:33:24.074Z",
+        "name": "Romance"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 42,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.314Z",
+        "updated_date": "2021-09-22T22:33:24.132Z",
+        "name": "Libro de texto"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 43,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.373Z",
+        "updated_date": "2021-09-22T22:33:24.191Z",
+        "name": "Satira"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 44,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.440Z",
+        "updated_date": "2021-09-22T22:33:24.258Z",
+        "name": "Crimen verdadero"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 45,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.506Z",
+        "updated_date": "2021-09-22T22:33:24.325Z",
+        "name": "Ciencia ficcion"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 46,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.581Z",
+        "updated_date": "2021-09-22T22:33:24.399Z",
+        "name": "Revisar"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 47,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.648Z",
+        "updated_date": "2021-09-22T22:33:24.474Z",
+        "name": "Cuento"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 48,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.715Z",
+        "updated_date": "2021-09-22T22:33:24.532Z",
+        "name": "Ciencias"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 49,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.782Z",
+        "updated_date": "2021-09-22T22:33:24.591Z",
+        "name": "Suspenso"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 50,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.847Z",
+        "updated_date": "2021-09-22T22:33:24.699Z",
+        "name": "Autoayuda"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 51,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.915Z",
+        "updated_date": "2021-09-22T22:33:24.757Z",
+        "name": "Novela de suspenso"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 52,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.973Z",
+        "updated_date": "2021-09-22T22:33:24.816Z",
+        "name": "Deportes y Ocio"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 53,
+    "fields": {
+        "created_date": "2021-09-22T22:37:58.040Z",
+        "updated_date": "2021-09-22T22:33:24.874Z",
+        "name": "occidental"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 54,
+    "fields": {
+        "created_date": "2021-09-22T22:37:58.114Z",
+        "updated_date": "2021-09-22T22:33:24.932Z",
+        "name": "Viaje"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 55,
+    "fields": {
+        "created_date": "2021-09-22T22:37:58.181Z",
+        "updated_date": "2021-09-22T22:33:24.990Z",
+        "name": "Adulto joven"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 56,
+    "fields": {
+        "created_date": "2021-09-22T22:37:58.258Z",
+        "updated_date": "2021-09-22T22:33:25.049Z",
+        "name": "Crimen verdadero"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 57,
+    "fields": {
+        "created_date": "2021-09-24T23:50:24.898Z",
+        "updated_date": "2021-09-24T23:50:24.898Z",
+        "name": "Literatura fantastica"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 58,
+    "fields": {
+        "created_date": "2021-09-24T23:50:25.019Z",
+        "updated_date": "2021-09-24T23:50:25.019Z",
+        "name": "Alta fantasia"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 59,
+    "fields": {
+        "created_date": "2021-09-24T23:50:25.097Z",
+        "updated_date": "2021-09-24T23:50:25.097Z",
+        "name": "Aventuras"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 60,
+    "fields": {
+        "created_date": "2021-09-24T23:50:25.175Z",
+        "updated_date": "2021-09-24T23:50:25.175Z",
+        "name": "Ficcion especulativa"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 61,
+    "fields": {
+        "created_date": "2021-09-24T23:50:25.254Z",
+        "updated_date": "2021-09-24T23:50:25.254Z",
+        "name": "Novela cortes"
+    }
+},
+{
+    "model": "books.booksgenres",
+    "pk": 62,
+    "fields": {
+        "created_date": "2021-09-22T22:37:57.200Z",
+        "updated_date": "2021-09-22T22:33:24.016Z",
+        "name": "Genero policiaco"
+    }
+},
+]

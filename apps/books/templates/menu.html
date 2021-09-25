@@ -1,0 +1,5 @@
+<ul>
+  {% for li in menu %}
+    <li class="{{ li.class }}{% if menu_active == li.class %} active{% endif %}"><a href="{{ li.url }}"><i class="fa {{ li.icon }}" aria-hidden="true"></i><span class="hidden-xs hidden-sm">{{ li.name }}</span></a></li>
+  {% endfor %}
+</ul>

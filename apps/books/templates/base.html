@@ -1,0 +1,34 @@
+{# Load the tag library #}
+
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Library Catalog</title>
+  {# Load CSS and JavaScript #}
+  {% bootstrap_css %}
+  {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  {% endblock %}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
+    {% bootstrap_javascript jquery='full' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+  {% block js %}
+  {% endblock %}
+</head>
+<body class="{% block body_class %}home{% endblock %}">
+  {% block body %}
+    {% block menu %}{% endblock menu %}
+    {% block content %}
+    {% endblock %}
+   <footer>
+    {% block footer %}{% endblock %}
+   </footer>
+  {% endblock %}
+</body>
+</html>

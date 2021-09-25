@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-25 02:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Ismael Jiménez Ortiz <ismaeljimenezortiz@gmail.com>\n"
+"Language-Team: Ismael Jiménez Ortiz <ismaeljimenezortiz@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Spanish"
+msgstr "Español"
+
+msgid "English"
+msgstr "Inglés"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "physical"
+msgstr "físico"
+
+msgid "digital"
+msgstr "digital"
+
+msgid "Enter an press by search"
+msgstr "Presionar enter para buscar"
+
+msgid "added"
+msgstr "añadido"
+
+msgid "updated"
+msgstr "actualizado"
+
+msgid "name"
+msgstr "nombre"
+
+msgid "description"
+msgstr "descripción"
+
+msgid "genre"
+msgstr "género"
+
+msgid "book"
+msgstr "libro"
+
+msgid "editorial"
+msgstr "editorial"
+
+msgid "date of publication"
+msgstr "fecha de publicación"
+
+msgid "is retired?"
+msgstr "¿Ésta retirado?"
+
+msgid "Format"
+msgstr "formato"
+
+msgid "added by"
+msgstr "añadido por"
+
+msgid "retired"
+msgstr "retirado"
+
+msgid "edit general book information"
+msgstr "editar la información general del libro"
+
+msgid "Add info"
+msgstr "Añadir Libro"
+
+msgid "No book found"
+msgstr "No se ha encontrado libros"
+
+msgid "Found"
+msgstr "Encontrados"
+
+msgid "RETIRED"
+msgstr "RETIRADO"
+
+msgid "Year of publication"
+msgstr "Año de publicación"
+
+msgid "Editorial"
+msgstr "Editorial"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "delete"
+msgstr "borrar"
+
+msgid "Delete book"
+msgstr "Borrar libro"
+
+msgid "¿Are you sure to delete this book?"
+msgstr "¿Estás seguro de eliminar el libro"
+
+msgid "Discard"
+msgstr "Descartar"
+
+msgid "Delete"
+msgstr "Borrar"
+
+msgid "Edit book:"
+msgstr "Editar libro:"
+
+msgid "Add book Info:"
+msgstr "añadir información del Libro"
+
+msgid "Add"
+msgstr "añadir"
+
+msgid "Go detail"
+msgstr "Ir a detalles"
+
+msgid "Book Info"
+msgstr "Información del Libro"
+
+msgid "Add other row"
+msgstr "Añadir otra fila"
+
+msgid "Books"
+msgstr "Libros"
+
+msgid "Results"
+msgstr "Resultados"
+
+msgid "Library Catalog"
+msgstr "Cátalogo de la Librería"
+
+msgid "Add Book"
+msgstr "Añadir Libro"
+
+msgid "last books added"
+msgstr "Últimos libros añadidos"
+
+msgid "discard"
+msgstr "descartar"
+
+msgid "add"
+msgstr "añadir"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Profile Settings"
+msgstr "Cónfiguración del Perfil"
+
+msgid "Save Profile"
+msgstr "Guardar perfil"
+
+msgid "Books Added"
+msgstr "Libro Añadido"
+
+msgid "Have an account?"
+msgstr "¿Tiene una cuenta?"
+
+msgid "Access my account account"
+msgstr "Acceder a mi cuenta"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Don't have an account?"
+msgstr "¿No tiene una cuenta?"
+
+msgid "Register to be able to consult the information of the books"
+msgstr "Registraté para poder consultar la informacion de los libros"
+
+msgid "Register"
+msgstr "Registrar"
+
+msgid "LOGIN"
+msgstr "LOGIN"
+
+msgid "Library plataform"
+msgstr "Librería plataforma"
+
+msgid "REGISTER"
+msgstr "Registrar"
+
+msgid "Username"
+msgstr "Usuario"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Confirm Password"
+msgstr "Confirmar Contraseña"
+
+msgid "enter"
+msgstr "introducir"

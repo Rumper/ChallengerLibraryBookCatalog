@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% load i18n more_like_this tags %}
+
+{% block box %}
+    {% trans 'Results' as title %}
+    {% include 'books_cards.html' with books=object_list|get_elastic_object title=title %}
+{% endblock %}

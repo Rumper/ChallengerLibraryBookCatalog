@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block menu %}{% endblock %}
+
+{% block css %}
+	{{ block.super }}
+	<link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
+{% endblock %}
+
+{% block js %}
+	{{ block.super }}
+	<script src="{% static 'login/login.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="login-reg-panel">
+	<div class="login-info-box">
+		<h2>{% trans 'Have an account?' %}</h2>
+		<p>{% trans 'Access my account account' %}</p>
+		<label id="label-register" for="log-reg-show">{% trans 'Login' %}</label>
+		<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+	</div>
+	<div class="register-info-box">
+		<h2>{% trans "Don't have an account?" %}</h2>
+		<p>{% trans 'Register to be able to consult the information of the books' %}</p>
+		<label id="label-login" for="log-login-show">{% trans 'Register' %}</label>
+		<input type="radio" name="active-log-panel" id="log-login-show">
+	</div>
+	<div class="white-panel">
+		<form action="" method="post">{% csrf_token %}
+			<div class="login-show">
+				<h2>{% trans 'LOGIN' %}</h2>
+				<p>{% trans 'Library plataform' %}</p>
+				{{ form.as_p }}
+				<button type="submit" class="btn btn-primary">{% trans 'Login' %}</button>
+				{% comment %}<a href="{% url 'password_reset' %}">{% trans 'Forgot password?' %}</a>{% endcomment %}
+			</div>
+		</form>
+		<form action="{% url 'register' %}" method="post">{% csrf_token %}
+			<div class="register-show">
+				<h2>{% trans 'REGISTER' %}</h2>
+				{% if messages %}
+					<ul class="errorlist nonfield">
+						{% for message in messages %}
+							<li>{{ message }}</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+				<input type="text" name='username' placeholder="{% trans 'Username' %}">
+				<input type="password" name="password1" placeholder="{% trans 'Password' %}">
+				<input type="password" name="password2" placeholder="{% trans 'Confirm Password' %}">
+				<button type="submit" class="btn btn-primary">{% trans 'Register' %}</button>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

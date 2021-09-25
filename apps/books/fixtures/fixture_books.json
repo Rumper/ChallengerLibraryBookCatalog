@@ -1,0 +1,60 @@
+[
+{
+    "model": "books.books",
+    "pk": 1,
+    "fields": {
+        "created_date": "2021-09-25T00:11:34.420Z",
+        "updated_date": "2021-09-25T00:11:34.181Z",
+        "name": "El Señor de los Anillos",
+        "description": "El Señor de los Anillos (titulo original en ingles: The Lord of the Rings) es una novela de fantasia epica escrita por el filologo y escritor britanico J. R. R. Tolkien.\n\nSu historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, asi como por muchas otras criaturas reales y fantasticas. La novela narra el viaje del protagonista principal, Frodo Bolson, hobbit de la Comarca, para destruir el Anillo unico y la consiguiente guerra que provocara el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el Señor oscuro, Sauron. \n",
+        "genre": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "books.books",
+    "pk": 2,
+    "fields": {
+        "created_date": "2021-09-25T00:11:35.555Z",
+        "updated_date": "2021-09-25T00:11:35.441Z",
+        "name": "Reina Roja (novela)",
+        "description": "Reina Roja es un libro de novela escrito por Juan Gomez-Jurado, publicado el 8 de noviembre de 2018. Es el primer libro de la trilogia sobre Antonia Scott, seguido despues por Loba Negra y Rey Blanco.\n\nEl agente de la policia nacional Jon Gutierrez[1]​ es detenido por haber intentado inculpar a otra persona. No tiene muchas opciones para salir de esta. Hasta que le ofrecen hacer un trabajo. Tiene que convencer a Antonia Scott de que le siga. La trama relata como Jon y Antonia se convierten en compañeros de investigacion en la busqueda de un asesino por toda la ciudad de Madrid.\n",
+        "genre": [
+            62
+        ]
+    }
+},
+{
+    "model": "books.books",
+    "pk": 3,
+    "fields": {
+        "created_date": "2021-09-25T00:11:36.511Z",
+        "updated_date": "2021-09-25T00:11:36.402Z",
+        "name": "Contrato con Dios (novela de Juan Gomez-Jurado)",
+        "description": "Contrato con Dios es una novela de Juan Gomez-Jurado publicada en España en 2007. Este thriller de aventuras ambientado en la actualidad, se publico en varios paises del mundo con el titulo de \"Contract to Paradise (Contrato al Paraiso)\" y en muchos otros con el titulo original en España, convirtiendose en un best-seller internacional junto a su novela anterior Espia de Dios, con la que comparte algunos de los personajes.[1]​\n\nEn 2007 el multimillonario de origen judio Raymond Kayn financia una expedicion arqueologica secreta al desierto de Jordania para buscar en el monte Sinai el Arca de la Alianza, que contiene en su interior las Tablas de la Ley, el \"Contrato con Dios\" firmado por Moises. Le acompañan en su mision Andrea Otero, periodista española a la que se le ofrece la exclusiva mundial sobre los descubrimientos que se puedan realizar, y el padre Anthony Fowler, norteamericano, exmilitar y exagente de la CIA. Pero entre los integrantes de la expedicion tambien se ha infiltrado el Mosad, los servicios secretos del Vaticano y un terrorista islamico, por lo que las posibilidades de que el Arca caiga en malas manos de multiplican.\n",
+        "genre": [
+            49,
+            51
+        ]
+    }
+},
+{
+    "model": "books.books",
+    "pk": 4,
+    "fields": {
+        "created_date": "2021-09-25T00:11:37.927Z",
+        "updated_date": "2021-09-25T00:11:37.689Z",
+        "name": "Hombres buenos",
+        "description": "Hombres buenos es una novela del escritor español Arturo Perez-Reverte publicada en el año 2015 por editorial Alfaguara. Narra las peripecias de dos academicos enviados a Francia por la Real Academia Española a finales del siglo XVIII, con la finalidad de adquirir los 28 volumenes de la Encyclopedie o Dictionnaire raisonne des sciences, des arts et des metiers, enciclopedia francesa editada entre los años 1751 y 1772 bajo la direccion de Denis Diderot y Jean Le Rond d'Alembert. Esta obra era imposible de conseguir en España por formar parte del indice de libros prohibidos por la Iglesia catolica en 1759, debido a que elogiaba a pensadores protestantes, desafiaba el dogma catolico, y clasificaba la religion como una rama de la filosofia.[1]​[2]​[3]​\n\nDurante el viaje a Paris para conseguir L'Encyclopedie, los dos protagonistas principales, el bibliotecario Hermogenes Molina y el almirante don Pedro Zarate, han de enfrentarse a diferentes problemas. Sufren el asalto de bandidos durante el viaje de Madrid a Paris y deben visitar en esa ciudad oscuras librerias donde se venden todo tipo de libros prohibidos, desde las obras de Voltaire y Rousseau, hasta publicaciones pornograficas. A lo largo del relato, ambos protagonistas se van conociendo cada vez mas estrechamente y debaten sobre temas en los que tienen diferentes opiniones, conciliando poco a poco sus diferencias y alcanzando finalmente una gran amistad.\n",
+        "genre": [
+            61
+        ]
+    }
+}
+]

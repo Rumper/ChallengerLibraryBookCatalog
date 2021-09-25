@@ -1,0 +1,136 @@
+{% extends 'index.html' %}
+{% load i18n static %}
+
+
+{% block box %}
+{% with book=object %}
+	<div class="container rounded bg-white mt-5 mb-5">
+	  <div class="row">
+	    <div class="col-md-3 border-right books">
+	      <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold"><span class="title-book">{{ book.name }}</span> <i class="fa fa-edit" title="{% trans 'edit general book information' %}" data-toggle="modal" data-target="#edit_modal_book" onclick="get_form('{% url 'ajax_get_forms' 'books' book.pk %}', '{% url 'books_edit' book.pk %}')"></i></span><span class="text-black-50">{{ books.get_genres }}</span><span><a href="#" class="add-detail" data-toggle="modal" data-target="#add_books_info_modal" ><i class="fa fa-plus"></i> {% trans 'Add info' %}</a></span></div>
+	    </div>
+	    <div class="col-md-9">
+	      <div class="p-3 py-5">
+	      	{{ book.description }}
+	      </div>
+	  	</div>
+	  </div>
+	</div>
+	{% with has_books=books.info.exists %}
+	<div class="container rounded bg-white mt-5 mb-5">
+			<div class="col-md-12 mb-5">
+			</div>
+  	<div class="col-md-12 mb-5">
+			<h3 id="total-books-empty" class="text-muted{% if has_books %} hidden{% endif %}">{% trans 'No book found' %}</h3>
+    	<h3 id="total-books" class="text-muted{% if not has_books %} hidden{% endif %}">{% trans 'Found' %} <span class="number">{{ books.total }}</span></h3>
+    </div>
+		{% if has_books %}
+    <div class="row">
+      {% for info in book.info.all %}
+	      <div id="book-{{info.isbn}}" class="col-md-4 mb-4">
+	        <div class="card">
+	          <div class="card-body">
+	            <h5 class="card-title">{% if info.is_retired %}{% trans 'RETIRED' %} | {% endif %}ISBN: {{ info.isbn }} </h5>
+	            <ul class="list-group">
+	            	<li class="list-group-item">{% trans 'Year of publication' %}: <span class="">{{ info.publication_date }}</span></li>
+	            	{% if info.editorial %}
+	            	<li class="list-group-item">{% trans 'Editorial' %}: <span class="">{{ info.editorial }}</span></li>
+	            	{% endif %}
+	            	<li class="list-group-item">{% trans 'Format' %}: <span class="">{{ info.get_format_display }}</span></li>
+	            </ul>
+	            <div class="buttons d-flex justify-content-around mt-3">
+	            	<button class="btn btn-primary mr-3" data-toggle="modal" data-target="#edit_modal_book" onclick="get_form('{% url 'ajax_get_forms' 'books_info' info.pk %}', '{% url 'books_info_edit' book.pk info.pk %}')"><i class="fa fa-pencil"></i> {% trans 'edit' %}</a>
+	            	{% if not info.is_retired %}
+								<button class="btn btn-primary" data-toggle="modal" data-target="#delete_modal_book" onclick="books_events_delete({{ info.pk }}, '{{ info.isbn }}')"><i class="fa fa-trash"></i> {% trans 'delete' %}</a>
+								{% endif %}
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+      {% endfor %}
+    	</div>
+    </div>
+    {% endif %}
+	</div>
+	{% endwith %}
+{% endwith %}
+{% endblock %}
+
+
+{% block modal %}
+	{{ block.super }}
+	<div class="modal fade" id="delete_modal_book" tabindex="-1" role="dialog" aria-labelledby="DeleteModalBook" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header login-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	        <h4 class="modal-title" id="DeleteModalBook">{% trans 'Delete book' %} <span class="isbn"></span></h4>
+	      </div>
+	      <div class="modal-body">
+	        {% trans '¿Are you sure to delete this book?' %}
+	        <form action="{% url 'books_delete' 1111 %}" id="books_delete">
+	        	{% csrf_token %}
+	      	</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="cancel" class="btn btn-primary" data-dismiss="modal">{% trans 'Discard' %}</button>
+	        <button type="button" class="add-project" class="btn btn-primary" onclick="books_submit_delete()">{% trans 'Delete' %}</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+  <div class="modal fade" id="edit_modal_book" tabindex="-1" role="dialog" aria-labelledby="EditModalBook" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header login-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	        <h4 class="modal-title" id="EditModalBook">{% trans 'Edit book:' %} <span class="title"></span></h4>
+	      </div>
+	      <div class="modal-body">
+	        <form id="edit_books" method="POST">
+	        	{% csrf_token %}
+	        	<div id="fields"></div>
+	      	</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="cancel" data-dismiss="modal">{% trans 'Discard' %}</button>
+	        <button type="button" class="add-project" onclick="form_books('#edit_books')">{% trans 'edit' %}</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="add_books_info_modal" tabindex="-1" role="dialog" aria-labelledby="AddInfoModalBook" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header login-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	        <h4 class="modal-title" id="AddInfoModalBook">{% trans 'Add book Info:' %} <span class="title"></span></h4>
+	      </div>
+	      <div class="modal-body">
+	        <form id="add_info_books" method="POST" action="{% url 'books_add_info' %}">
+	        	{% csrf_token %}
+	        	<div id="fields">
+	        		{{ form_add_info.as_p }}
+	        		{% for hidden in form_add_info.hidden_fields %}
+                {{ hidden }}
+            	{% endfor %}
+	        	</div>
+	      	</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="cancel" data-dismiss="modal">{% trans 'Discard' %}</button>
+	        <button type="button" class="add-project" onclick="form_books('#add_info_books')">{% trans 'Add' %}</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+{% endblock %}
